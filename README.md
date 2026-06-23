@@ -1,1 +1,7 @@
-# ReadySetPDF
+ReadySetPDFA professional prepress tool designed for print shops to automate imposition, booklet creation, and variable data printing (VDP).FeaturesImposition Engines: Intelligent Monkey and Grid layouts for 12x18/13x19 press sheets with perimeter bleed marks for easy trimming.  Booklet Maker: Automatic saddle-stitch signature generation with spine-gutter clipping and creep compensation.  VDP Mail Merge: CSV-driven text and QR code injection.  Utilities: PDF unlocking, rotation, color space conversion, and automated batch processing.  Getting StartedEnsure you have Python installed on your system.Install the required dependencies:pip install PyMuPDF tkinterdnd2 qrcode[pil] Pillow3. 
+
+Run the application:
+   ```bash
+   python readysetpdf.2.19.py
+
+Support & FeedbackIf you encounter a bug or have a feature request, please use the "Report Bug / Feedback" button located in the footer of the application to send a report directly to the development team.  Version HistorySee the CHANGELOG.md for a complete list of updates, including the latest v2.19 features.
