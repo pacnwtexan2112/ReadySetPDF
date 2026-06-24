@@ -17,10 +17,14 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--white); color: var(--navy); margin: 0; padding: 0; line-height: 1.6; }
         
         /* Hero Section */
-        header { background-color: var(--navy); color: var(--white); padding: 4rem 2rem; text-align: center; border-bottom: 5px solid var(--lime); }
-        .hook-banner { background-color: var(--lime); color: var(--navy); padding: 12px 20px; font-weight: 800; border-radius: 8px; max-width: 800px; margin: 0 auto 2rem auto; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(178, 243, 50, 0.2); border: 2px solid #9AD62A; }
-        header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--white); margin-top: 0; }
-        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; color: var(--mint); font-weight: 400; }
+        header { background-color: #FFFFFF; padding: 4rem 2rem; text-align: center; border-bottom: 5px solid var(--lime); }
+        .hook-banner { background-color: var(--lime); color: var(--navy); padding: 12px 20px; font-weight: 800; border-radius: 8px; max-width: 800px; margin: 0 auto 2.5rem auto; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(178, 243, 50, 0.2); border: 2px solid #9AD62A; }
+        
+        /* Logo Sizing */
+        .hero-logo { max-width: 280px; height: auto; margin: 0 auto 1.5rem auto; display: block; }
+        
+        header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--navy); margin-top: 0; }
+        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; color: var(--steel); font-weight: 500; }
         
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         h2 { color: var(--navy); border-bottom: 3px solid var(--lime); display: inline-block; padding-bottom: 5px; margin-top: 2rem;}
@@ -34,6 +38,7 @@
 
         @media (max-width: 768px) {
             .benefits-banner ul { grid-template-columns: 1fr; }
+            .hero-logo { max-width: 220px; }
         }
 
         /* Tools Grid */
@@ -61,7 +66,10 @@
 <body>
 
 <header>
-    <div class="hook-banner">🔥 Save hours vs. manual tools; hot folders run overnight.</div>
+    <div class="hook-banner">🔥 Save hours per job vs. manual or old tools; hot folders run overnight.</div>
+    
+    <img src="https://raw.githubusercontent.com/pacnwtexan2112/ReadySetPDF/main/logo%20cropped.png" alt="ReadySetPDF" class="hero-logo">
+    
     <h1>ReadySetPDF</h1>
     <p>The preflight and prepress automation engine designed to eliminate bottlenecks, reduce waste, and get jobs on press faster for small to mid-sized print shops.</p>
     <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/2.19/readysetpdf.2.19.exe" class="btn">Get Version 2.19</a>
@@ -148,8 +156,8 @@
     </div>
 
     <div class="cta-section">
-        <h2>By printers, for printers</h2>
-        <p>Stop Wasting Time on Manual Layouts. ReadySetPDF is lightweight, blazingly fast, and built specifically for the demands of the modern pressroom.</p>
+        <h2>Stop Wasting Time on Manual Layouts</h2>
+        <p>Join the prepress professionals who have upgraded their workflow. ReadySetPDF is lightweight, blazingly fast, and built specifically for the demands of the modern pressroom.</p>
         <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/2.19/readysetpdf.2.19.exe" class="btn">Download Version 2.19 Now</a>
         <p style="margin-top: 15px; font-size: 0.9rem; color: var(--steel);">Requires Windows OS. A portable .exe with no complex installation required.</p>
     </div>
