@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>readysetpdf — Fast, beautiful PDFs from HTML & Markdown</title>
+  <meta name="description" content="ReadySetPDF generates production-quality PDFs from HTML, Markdown, or web pages — API, CLI, and templates for automated PDF workflows." />
+  <meta property="og:title" content="readysetpdf — Fast, beautiful PDFs" />
+  <meta property="og:description" content="Generate production-quality PDFs from HTML, Markdown, or web pages. API, CLI, templates, and powerful styling options." />
+  <meta property="og:image" content="https://yourdomain.com/og-image.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Tailwind CDN for quick prototyping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Small tidy custom styles */
+    .hero-gradient { background: linear-gradient(90deg,#0f172a 0%, #0b1220 60%); }
+    .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(6px); }
+    .screenshot { background: linear-gradient(180deg,#0b1220 0%, #071026 120%); border-radius: 12px; }
+    pre code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
+  </style>
+</head>
+<body class="antialiased text-slate-200 bg-slate-900">
+
+  <!-- Header -->
+  <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-white/10 rounded flex items-center justify-center text-xl font-bold">R</div>
+      <div>
+        <a href="#" class="text-white font-semibold text-lg">readysetpdf</a>
+        <div class="text-sm text-slate-400">PDFs from HTML, Markdown & APIs</div>
+      </div>
+    </div>
+    <nav class="flex items-center gap-4">
+      <a href="#features" class="text-slate-300 hover:text-white">Features</a>
+      <a href="#pricing" class="text-slate-300 hover:text-white">Pricing</a>
+      <a href="#docs" class="text-slate-300 hover:text-white">Docs</a>
+      <a href="#contact" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-md font-medium" id="cta-top">Get started</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-8 items-center">
+    <div class="space-y-6">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+        Generate PDFs that look as good as your site — in seconds.
+      </h1>
+      <p class="text-slate-300 max-w-xl">
+        readysetpdf converts HTML, Markdown, and web pages to production-quality PDFs with templates, headers/footers, custom CSS, and a simple API and CLI. Automate invoices, reports, docs, and marketing PDFs with confidence.
+      </p>
+
+      <div class="flex flex-wrap gap-3">
+        <a href="#signup" class="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-md font-medium">Try free • No credit card</a>
+        <a href="#docs" class="inline-flex items-center gap-2 px-5 py-3 border border-white/10 rounded-md text-slate-200">View API docs</a>
+      </div>
+
+      <div class="grid grid-cols-3 gap-3 text-sm text-slate-400 mt-6">
+        <div>
+          <div class="text-white font-semibold"><span class="text-indigo-400">>200k</span></div>
+          <div>Pages rendered</div>
+        </div>
+        <div>
+          <div class="text-white font-semibold"><span class="text-indigo-400">99.99%</span></div>
+          <div>Uptime</div>
+        </div>
+        <div>
+          <div class="text-white font-semibold"><span class="text-indigo-400">REST & SDKs</span></div>
+          <div>API, CLI, and Node/Python SDKs</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screenshot / mock -->
+    <div class="relative">
+      <div class="screenshot p-6 rounded-xl shadow-xl">
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-24 h-6 bg-white/10 rounded"></div>
+          <div class="text-xs text-slate-400">Preview • A4 • 2 pages</div>
+        </div>
+        <div class="h-72 rounded bg-gradient-to-b from-slate-800 to-slate-700 flex items-center justify-center">
+          <div class="text-slate-400">[Replace with product screenshot]</div>
+        </div>
+      </div>
+
+      <div class="absolute -bottom-5 -left-6 transform rotate-6 opacity-70 w-36 h-20 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-xl blur-sm"></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-8">
+      <div class="md:col-span-2 space-y-6">
+        <h2 class="text-3xl font-bold">Features that make PDF automation painless</h2>
+        <p class="text-slate-300 max-w-2xl">Everything you need to generate consistent PDFs at scale: templates, custom styling, header/footer, accessible PDFs, fast rendering, and an easy API to integrate.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+          <div class="p-5 glass rounded-lg">
+            <h3 class="font-semibold">HTML & Markdown</h3>
+            <p class="text-slate-400 text-sm mt-1">Render templates from HTML or Markdown with full CSS support and custom fonts.</p>
+          </div>
+          <div class="p-5 glass rounded-lg">
+            <h3 class="font-semibold">API & CLI</h3>
+            <p class="text-slate-400 text-sm mt-1">RESTful API, CLI tools, and SDKs for Node & Python — generate PDFs from a URL or raw HTML.</p>
+          </div>
+          <div class="p-5 glass rounded-lg">
+            <h3 class="font-semibold">Templates & Layouts</h3>
+            <p class="text-slate-400 text-sm mt-1">Pre-built templates for invoices, reports, and proposals — or bring your own CSS.</p>
+          </div>
+          <div class="p-5 glass rounded-lg">
+            <h3 class="font-semibold">Fast & Scalable</h3>
+            <p class="text-slate-400 text-sm mt-1">High-concurrency rendering with caching and worker autoscaling for steady throughput.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="space-y-4">
+        <div class="p-5 bg-slate-800 rounded-lg">
+          <h4 class="text-sm text-indigo-400 font-semibold">Use cases</h4>
+          <ul class="mt-3 text-slate-300 space-y-2 text-sm">
+            <li>Invoices & receipts</li>
+            <li>On-demand marketing collateral</li>
+            <li>Automated PDF reports</li>
+            <li>Printable documentation</li>
+          </ul>
+        </div>
+
+        <div class="p-5 bg-slate-800 rounded-lg">
+          <h4 class="text-sm text-indigo-400 font-semibold">Integrations</h4>
+          <div class="flex gap-2 mt-3">
+            <span class="px-2 py-1 bg-white/5 rounded">Zapier</span>
+            <span class="px-2 py-1 bg-white/5 rounded">Google Drive</span>
+            <span class="px-2 py-1 bg-white/5 rounded">S3</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Quick API Example -->
+  <section id="docs" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h3 class="text-2xl font-bold">API & CLI — get a PDF in one request</h3>
+        <p class="text-slate-300 mt-2">Example: POST HTML and get a PDF back.</p>
+
+        <div class="mt-4 bg-slate-800 p-4 rounded">
+          <pre class="text-sm text-slate-200"><code>// curl
+curl -X POST "https://api.readysetpdf.com/v1/render" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{ "html": "<h1>Hello world</h1>", "options": { "format": "A4" } }' \
+  --output report.pdf
+</code></pre>
+
+          <pre class="text-sm text-slate-200 mt-4"><code>// Node (example)
+import fetch from "node-fetch";
+const res = await fetch("https://api.readysetpdf.com/v1/render", {
+  method: "POST",
+  headers: { "Authorization": "Bearer X", "Content-Type": "application/json" },
+  body: JSON.stringify({ html: "<h1>Hi</h1>" })
+});
+const buffer = Buffer.from(await res.arrayBuffer());
+await fs.promises.writeFile("out.pdf", buffer);
+</code></pre>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold">Options & templates</h4>
+        <p class="text-slate-300 mt-2">Pass headers and footers, page numbers, custom CSS, and choose page size/orientation. Templates let you standardize branding across generated docs.</p>
+
+        <div class="mt-4 p-4 bg-slate-800 rounded text-sm text-slate-400">
+          <strong>Example options</strong>
+          <ul class="list-disc ml-5 mt-2">
+            <li>format: "A4" or "Letter"</li>
+            <li>margins: { top: 20, bottom: 20 }</li>
+            <li>headerHtml, footerHtml</li>
+            <li>scale, displayHeaderFooter, preferCSSPageSize</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+      <h3 class="text-3xl font-bold">Simple pricing</h3>
+      <p class="text-slate-300 mt-2 max-w-2xl">Start free — upgrade as you scale. Pay for rendered pages or choose a subscription for predictable billing.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-slate-800 rounded-lg">
+          <div class="text-sm font-semibold text-indigo-400">Free</div>
+          <div class="text-2xl font-bold mt-2">Up to 100 pages / mo</div>
+          <p class="text-slate-400 mt-2">Good for testing and small projects.</p>
+          <ul class="mt-4 text-slate-300 space-y-2 text-sm">
+            <li>100 pages/month</li>
+            <li>Community support</li>
+            <li>Basic templates</li>
+          </ul>
+          <a href="#signup" class="mt-6 inline-block px-4 py-2 bg-white/6 rounded">Get Free</a>
+        </div>
+
+        <div class="p-6 bg-indigo-700 rounded-lg">
+          <div class="text-sm font-semibold text-indigo-100">Pro</div>
+          <div class="text-2xl font-bold mt-2">$49 / month</div>
+          <p class="text-indigo-100 mt-2">For teams and production workloads.</p>
+          <ul class="mt-4 text-indigo-100 space-y-2 text-sm">
+            <li>10,000 pages/month</li>
+            <li>Priority support</li>
+            <li>Custom templates</li>
+          </ul>
+          <a href="#signup" class="mt-6 inline-block px-4 py-2 bg-white text-indigo-700 rounded font-medium">Start Pro</a>
+        </div>
+
+        <div class="p-6 bg-slate-800 rounded-lg">
+          <div class="text-sm font-semibold text-indigo-400">Enterprise</div>
+          <div class="text-2xl font-bold mt-2">Contact us</div>
+          <p class="text-slate-400 mt-2">SLA, dedicated instances, audit logs.</p>
+          <ul class="mt-4 text-slate-300 space-y-2 text-sm">
+            <li>Unlimited pages</li>
+            <li>On-premise / VPC options</li>
+            <li>SLA & custom integrations</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-block px-4 py-2 bg-white/6 rounded">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h4 class="text-2xl font-bold">FAQ</h4>
+    <div class="mt-6 space-y-4 text-slate-300">
+      <details class="p-4 bg-slate-800 rounded">
+        <summary class="font-semibold cursor-pointer">What input formats are supported?</summary>
+        <div class="mt-2 text-slate-400">HTML, Markdown, direct URL rendering, and templates. You can upload assets or reference external CSS/fonts.</div>
+      </details>
+      <details class="p-4 bg-slate-800 rounded">
+        <summary class="font-semibold cursor-pointer">Is there a local CLI?</summary>
+        <div class="mt-2 text-slate-400">Yes — CLI for local rendering and to run in CI/CD. We also provide Node and Python SDKs.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+      <div>
+        <div class="text-white font-semibold">readysetpdf</div>
+        <div class="text-slate-400 mt-2">Ship beautiful PDFs, faster.</div>
+        <div class="text-slate-400 mt-4 text-sm">Email: <a href="mailto:hello@yourdomain.com" class="text-indigo-400">hello@yourdomain.com</a></div>
+      </div>
+
+      <div class="w-full md:w-96">
+        <form class="flex flex-col gap-3">
+          <label class="text-sm text-slate-300">Contact sales / trial</label>
+          <input type="email" placeholder="you@company.com" class="px-3 py-2 rounded bg-slate-900 border border-slate-700 text-slate-200" />
+          <textarea placeholder="Tell us about your use case" class="px-3 py-2 rounded bg-slate-900 border border-slate-700 text-slate-200"></textarea>
+          <button class="px-4 py-2 bg-indigo-600 rounded text-white">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 py-6 text-slate-500 text-sm border-t border-slate-800">
+      © <span id="year"></span> readysetpdf — Built with ❤️
+    </div>
+  </footer>
+
+  <script>
+    // small interactivity
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target=document.querySelector(a.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
