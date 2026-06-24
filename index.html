@@ -10,42 +10,93 @@
             --navy: #19123D;
             --steel: #6787AF;
             --lime: #B2F332;
+            --mint: #BADDCF;
+            --pale: #E8F3DA;
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--white); color: var(--navy); margin: 0; padding: 0; line-height: 1.6; }
-        header { background-color: var(--navy); color: var(--lime); padding: 3rem; text-align: center; }
-        .container { max-width: 900px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h2 { color: var(--steel); border-bottom: 2px solid var(--lime); display: inline-block; }
-        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
-        .card { padding: 1.5rem; border: 1px solid var(--steel); border-radius: 5px; }
-        .btn { display: inline-block; background-color: var(--lime); color: var(--navy); padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; }
+        
+        /* Hero Section */
+        header { background-color: var(--navy); color: var(--white); padding: 5rem 2rem; text-align: center; border-bottom: 5px solid var(--lime); }
+        header h1 { font-size: 3rem; margin-bottom: 0.5rem; color: var(--lime); }
+        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; color: var(--mint); }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--navy); border-bottom: 3px solid var(--lime); display: inline-block; padding-bottom: 5px; margin-top: 2rem;}
+        
+        /* Benefits Section */
+        .benefits-banner { background-color: var(--pale); padding: 2rem; border-radius: 8px; border-left: 5px solid var(--steel); margin: 2rem 0; }
+        .benefits-banner h3 { color: var(--navy); margin-top: 0; }
+        .benefits-banner ul { list-style-type: none; padding: 0; }
+        .benefits-banner li { margin-bottom: 10px; padding-left: 25px; position: relative; font-weight: 500; }
+        .benefits-banner li::before { content: '✓'; color: var(--steel); position: absolute; left: 0; font-weight: bold; }
+
+        /* Tools Grid */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 2rem; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(25, 18, 61, 0.08); transition: transform 0.2s ease; border-top: 4px solid var(--steel); }
+        .card:hover { transform: translateY(-5px); border-top: 4px solid var(--lime); }
+        .card h3 { color: var(--navy); margin-top: 0; font-size: 1.4rem; }
+        
+        /* Call to Action */
+        .cta-section { text-align: center; padding: 4rem 2rem; margin-top: 3rem; background-color: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .btn { display: inline-block; background-color: var(--lime); color: var(--navy); padding: 1rem 2.5rem; text-decoration: none; font-size: 1.1rem; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: background-color 0.2s ease; border: 2px solid transparent; }
+        .btn:hover { background-color: var(--white); border: 2px solid var(--lime); }
+        
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: var(--steel); }
     </style>
 </head>
 <body>
 
 <header>
     <h1>ReadySetPDF</h1>
-    <p>Professional Prepress Automation for Modern Print Shops</p>
+    <p>The preflight and prepress automation engine designed to eliminate bottlenecks, reduce waste, and get jobs on press faster for small to mid-sized print shops.</p>
+    <a href="#download" class="btn">Get Version 2.19</a>
 </header>
 
 <div class="container">
-    <h2>Why ReadySetPDF?</h2>
-    <p>Prepress should be fast, accurate, and predictable. ReadySetPDF is built by print professionals, for print professionals, to automate complex imposition and booklet tasks that used to take hours.</p>
+    
+    <div class="benefits-banner">
+        <h3>Real-World ROI for Your Print Shop</h3>
+        <p>Manual prepress is the silent margin-killer of the printing industry. ReadySetPDF replaces tedious manual layouts with automated precision, allowing your prepress operators to handle twice the volume with zero layout errors.</p>
+        <ul>
+            <li><strong>Eliminate the Prepress Bottleneck:</strong> Turn 45-minute booklet setups into 10-second automated clicks.</li>
+            <li><strong>Reduce Paper Waste:</strong> Flawless creep calculations and perimeter marks mean no more reprints due to bad imposition.</li>
+            <li><strong>Scale Your Capacity:</strong> Handle high-volume commercial and healthcare print procurement confidently without adding headcount.</li>
+            <li><strong>Direct Mail Ready:</strong> Seamlessly integrate Variable Data Printing (VDP) files built for strict USPS mailing standards.</li>
+        </ul>
+    </div>
 
+    <h2>The Prepress Toolkit</h2>
     <div class="feature-grid">
         <div class="card">
-            <h3>Automated Imposition</h3>
-            <p>Handle complex grid layouts and booklet spreads with ease. Stop worrying about creep and registration marks.</p>
+            <h3>Intelligent Imposition Engine</h3>
+            <p>Whether you need standard grid layouts for business cards or complex multi-up configurations, our engine handles the math. Easily step-and-repeat files for maximum sheet yield, complete with automated gutter control.</p>
         </div>
         <div class="card">
-            <h3>Precision Tools</h3>
-            <p>Designed for the edge-to-edge requirements of modern healthcare and commercial print procurement.</p>
+            <h3>Automated Booklet Processing</h3>
+            <p>Stop wrestling with reader-to-printer spreads. ReadySetPDF automatically paginates booklets and calculates precise spine creep based on your paper weight, ensuring perfectly flush face trims every time.</p>
+        </div>
+        <div class="card">
+            <h3>Precision Edge-to-Edge Marks</h3>
+            <p>Generating bleed and crop marks shouldn't be a guessing game. Apply professional perimeter marks, center marks, and trim boxes globally across any document, ensuring your bindery department has exactly what they need.</p>
+        </div>
+        <div class="card">
+            <h3>VDP & Mail Merge Ready</h3>
+            <p>Process Variable Data Printing streams rapidly. Easily link data sets to generate personalized direct mailers, healthcare compliance letters, or promotional apparel tags, all properly formatted for production machinery.</p>
         </div>
     </div>
 
-    <h2 style="margin-top: 40px;">Get Started</h2>
-    <p>Download the latest version and streamline your workflow today.</p>
-    <a href="#" class="btn">Download ReadySetPDF v2.19</a>
+    <div class="cta-section" id="download">
+        <h2>Stop Wasting Time on Manual Layouts</h2>
+        <p>Join the prepress professionals who have upgraded their workflow. Lightweight, blazingly fast, and built specifically for the demands of the modern pressroom.</p>
+        <a href="https://github.com/[YOUR_USERNAME]/readysetpdf/releases/tag/v2.19" class="btn">Download the .exe Now</a>
+        <p style="margin-top: 15px; font-size: 0.9rem; color: var(--steel);">Requires Windows OS. No complex installation required.</p>
+    </div>
+
 </div>
+
+<footer>
+    &copy; 2026 ReadySetPDF. Engineered for Print Professionals.
+</footer>
 
 </body>
 </html>
