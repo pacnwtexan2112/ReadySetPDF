@@ -1,8 +1,3 @@
-This is exactly how you write high-converting copy for B2B software. Print shop owners care about time, stability, and reducing manual touches. Hitting them with "hot folders run overnight" and "no browser limitations" directly attacks the pain points of modern cloud-based tools that crash on large files.
-I have updated the code to include a high-impact alert banner right at the top to grab their attention immediately. I also expanded the tool grid to 12 features (adding the AI and Hot Folder tools), injected the VDP and browser limitations copy, and added a dedicated "Trust & Stability" section to hammer home the weekly updates and support.
-### The Updated HTML:
-Replace everything in your index.html file with this code, save, and deploy to your main branch:
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +29,144 @@ Replace everything in your index.html file with this code, save, and deploy to y
         .benefits-banner { background-color: var(--pale); padding: 2rem; border-radius: 8px; border-left: 5px solid var(--steel); margin: 2rem 0; }
         .benefits-banner h3 { color: var(--navy); margin-top: 0; font-size: 1.5rem; }
         .benefits-banner ul { list-style-type: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .benefits-banner li { padding-left: 25px; position: relative; font-weight: 500; }
+        .benefits-banner li::before { content: '✓'; color: var(--steel); position: absolute; left: 0; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .benefits-banner ul { grid-template-columns: 1fr; }
+        }
+
+        /* Tools Grid */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 2rem; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(25, 18, 61, 0.08); transition: transform 0.2s ease; border-top: 4px solid var(--steel); }
+        .card:hover { transform: translateY(-5px); border-top: 4px solid var(--lime); }
+        .card h3 { color: var(--navy); margin-top: 0; font-size: 1.3rem; display: flex; align-items: center; gap: 10px; }
+        .tag { display: inline-block; background-color: var(--mint); color: var(--navy); font-size: 0.75rem; padding: 3px 8px; border-radius: 12px; font-weight: bold; vertical-align: middle; margin-left: auto;}
+        .tag-new { background-color: var(--navy); color: var(--lime); }
+        .card p { font-size: 0.95rem; color: #444; }
+
+        /* Trust Banner */
+        .trust-banner { background-color: var(--navy); color: white; padding: 3rem 2rem; border-radius: 8px; text-align: center; margin-top: 4rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .trust-banner h2 { color: var(--lime); border: none; margin-top: 0; font-size: 2rem; }
+        .trust-banner p { font-size: 1.1rem; max-width: 800px; margin: 0 auto; color: var(--white); }
+
+        /* Call to Action */
+        .cta-section { text-align: center; padding: 4rem 2rem; margin-top: 2rem; background-color: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 2px solid var(--pale); }
+        .btn { display: inline-block; background-color: var(--lime); color: var(--navy); padding: 1rem 2.5rem; text-decoration: none; font-size: 1.1rem; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: all 0.2s ease; border: 2px solid transparent; }
+        .btn:hover { background-color: var(--navy); color: var(--lime); border: 2px solid var(--lime); }
+        
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: var(--steel); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="hook-banner">🔥 Save hours per job vs. manual or old tools; hot folders run overnight.</div>
+    <h1>ReadySetPDF</h1>
+    <p>The preflight and prepress automation engine designed to eliminate bottlenecks, reduce waste, and get jobs on press faster for small to mid-sized print shops.</p>
+    <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/2.19/readysetpdf.2.19.exe" class="btn">Get Version 2.19</a>
+</header>
+
+<div class="container">
+    
+    <div class="benefits-banner">
+        <h3>Real-World ROI for Your Print Shop</h3>
+        <p style="margin-bottom: 20px;">Manual prepress is the silent margin-killer of the printing industry. ReadySetPDF replaces tedious manual layouts with automated precision, allowing your prepress operators to handle twice the volume with zero layout errors.</p>
+        <ul>
+            <li><strong>Eliminate the Prepress Bottleneck:</strong> Turn 45-minute booklet setups into 10-second automated clicks.</li>
+            <li><strong>No Browser Limitations:</strong> 100% local processing. No cloud upload delays or file size caps on massive jobs.</li>
+            <li><strong>Scale Your Capacity:</strong> Handle high-volume commercial runs confidently without adding headcount.</li>
+            <li><strong>Production-Grade Stability:</strong> Built to handle 10,000+ record VDP runs without crashing.</li>
+        </ul>
+    </div>
+
+    <h2>The Full Prepress Arsenal</h2>
+    <p>ReadySetPDF doesn't just view files; it engineers them for the press. Explore the complete suite of tools included in version 2.19.</p>
+    
+    <div class="feature-grid">
+        
+        <div class="card">
+            <h3>Automated Hot Folders <span class="tag tag-new">Game Changer</span></h3>
+            <p>Set it and forget it. Designate watch folders on your local network. ReadySetPDF automatically monitors them, applying your pre-configured templates, impositions, and prepress checks so jobs are ready to print by morning.</p>
+        </div>
+
+        <div class="card">
+            <h3>Integrated AI Layout Suggestions <span class="tag tag-new">New</span></h3>
+            <p>Not sure how to yield the best sheet? Our integrated AI analyzes your document dimensions and target press sheet sizes to provide intelligent layout suggestions, minimizing paper waste and maximizing your click efficiency.</p>
+        </div>
+
+        <div class="card">
+            <h3>Variable Data Handling <span class="tag">Core Tool</span></h3>
+            <p>Process massive Variable Data Printing streams rapidly using your own hardware. With no browser limitations or lag, you can seamlessly link CSV data sets to PDF templates for personalized direct mailers and healthcare compliance letters.</p>
+        </div>
+
+        <div class="card">
+            <h3>Step & Repeat Imposition</h3>
+            <p>Maximize your sheet yield instantly. Input custom row/column counts, define exact gutter spacing, and let the engine step-and-repeat single records into production-ready multi-up press sheets in seconds. Ideal for business cards and tags.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automated Booklet Maker</h3>
+            <p>Stop wrestling with reader-to-printer spreads. ReadySetPDF automatically paginates multipage documents into perfect 2-up saddle stitch layouts, applying precise spine creep based on your specific paper caliper for flush face trims.</p>
+        </div>
+
+        <div class="card">
+            <h3>Prepress Preflight Reports</h3>
+            <p>Catch costly errors before they ever reach the plate. Generate detailed preflight reports that analyze files for missing fonts, low-resolution imagery, RGB vs. CMYK color space issues, and improper trim/bleed box definitions.</p>
+        </div>
+
+        <div class="card">
+            <h3>PDF Unlock & Decryption</h3>
+            <p>Bypass frustrating file restrictions. Instantly remove owner passwords and print-lock restrictions from client-supplied PDFs so you can preflight, impose, and send files to the RIP without workflow interruptions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Advanced Batch Processing</h3>
+            <p>Process entire folders of PDFs simultaneously. Consolidate chaos into a single print run by seamlessly merging dozens of files into one optimized master document, or apply crop marks and scaling to hundreds of files in a single click.</p>
+        </div>
+
+        <div class="card">
+            <h3>Crop & Bleed Mark Generator</h3>
+            <p>Generating printer marks shouldn't be a guessing game. Apply professional perimeter crop marks, center marks, and define trim boxes globally across any document. Ensure your bindery department has exactly the edge-to-edge indicators they need.</p>
+        </div>
+
+        <div class="card">
+            <h3>Page Extraction & Splitting</h3>
+            <p>Break down massive batch files into manageable chunks for different presses. Extract specific page ranges, split a 10,000-page file into 1,000-page segments, or pull single records out of a corrupted print stream instantly.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automated Blank Page Insertion</h3>
+            <p>Fix duplexing errors before they hit the press. Automatically insert blank pages to force right-hand reading, pad documents to divisible page counts for booklet making, or ensure chapter starts always land on the front of a sheet.</p>
+        </div>
+
+        <div class="card">
+            <h3>Document Resizing & Scaling</h3>
+            <p>Standardize customer files instantly. Force non-standard client PDFs into standard print dimensions (Letter, Tabloid, Custom) while intelligently maintaining aspect ratios, centering content, and automatically adjusting the trim box definitions.</p>
+        </div>
+
+    </div>
+
+    <div class="trust-banner">
+        <h2>Built for the Real World</h2>
+        <p>You don't have time for software that crashes when you need it most. ReadySetPDF delivers <strong>production-grade stability</strong> you can rely on. We provide <strong>weekly updates</strong> based directly on user feedback, and you are backed by <strong>dedicated support</strong> from print professionals who actually understand your workflow.</p>
+    </div>
+
+    <div class="cta-section">
+        <h2>Stop Wasting Time on Manual Layouts</h2>
+        <p>Join the prepress professionals who have upgraded their workflow. ReadySetPDF is lightweight, blazingly fast, and built specifically for the demands of the modern pressroom.</p>
+        <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/2.19/readysetpdf.2.19.exe" class="btn">Download Version 2.19 Now</a>
+        <p style="margin-top: 15px; font-size: 0.9rem; color: var(--steel);">Requires Windows OS. A portable .exe with no complex installation required.</p>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 ReadySetPDF by Darren Moeller. Engineered for Print Professionals.
+</footer>
+
+</body>
+</html>
         .benefits-banner li { padding-left: 25px; position: relative; font-weight: 500; }
         .benefits-banner li::before { content: '✓'; color: var(--steel); position: absolute; left: 0; font-weight: bold; }
 
@@ -280,7 +413,7 @@ Replace everything in your index.html file with this code, save, and deploy to y
 
     <div class="cta-section">
         <h2>Stop Wasting Time on Manual Layouts</h2>
-        <p>Join the prepress professionals who have upgraded their workflow. ReadySetPDF is lightweight, blazingly fast, and built specifically for the demands of the modern pressroom.</p>
+        <p>By printers, for printers. ReadySetPDF is lightweight, blazingly fast, and built specifically for the demands of the modern pressroom.</p>
         <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/2.19/readysetpdf.2.19.exe" class="btn">Download Version 2.19 Now</a>
         <p style="margin-top: 15px; font-size: 0.9rem; color: var(--steel);">Requires Windows OS. A portable .exe with no complex installation required.</p>
     </div>
