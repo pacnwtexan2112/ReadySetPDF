@@ -15,12 +15,10 @@
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--white); color: var(--navy); margin: 0; padding: 0; line-height: 1.6; }
         
-        /* Hero Section (Updated for Logo) */
-        header { background-color: #FFFFFF; color: var(--navy); padding: 4rem 2rem; text-align: center; border-bottom: 5px solid var(--lime); }
-        .hero-logo { max-width: 400px; height: auto; margin: 0 auto 1.5rem auto; display: block; }
-        /* Visually hide the h1 for screen readers only, since the logo text handles it visually */
-        header h1 { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
-        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; color: var(--steel); font-weight: 500; }
+        /* Hero Section */
+        header { background-color: var(--navy); color: var(--white); padding: 5rem 2rem; text-align: center; border-bottom: 5px solid var(--lime); }
+        header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--lime); }
+        header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; color: var(--mint); font-weight: 400; }
         
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         h2 { color: var(--navy); border-bottom: 3px solid var(--lime); display: inline-block; padding-bottom: 5px; margin-top: 2rem;}
@@ -34,7 +32,6 @@
 
         @media (max-width: 768px) {
             .benefits-banner ul { grid-template-columns: 1fr; }
-            .hero-logo { max-width: 280px; }
         }
 
         /* Tools Grid */
@@ -56,7 +53,6 @@
 <body>
 
 <header>
-    <img src="ReadySetPDF%20logo.jpg" alt="ReadySetPDF" class="hero-logo">
     <h1>ReadySetPDF</h1>
     <p>The preflight and prepress automation engine designed to eliminate bottlenecks, reduce waste, and get jobs on press faster for small to mid-sized print shops.</p>
     <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/2.19/readysetpdf.2.19.exe" class="btn">Get Version 2.19</a>
@@ -94,35 +90,47 @@
 
         <!-- Tool 3 -->
         <div class="card">
-            <h3>Crop & Bleed Mark Generator</h3>
-            <p>Generating printer marks shouldn't be a guessing game. Apply professional perimeter crop marks, center marks, and define trim boxes globally across any document. Ensure your bindery department has exactly the edge-to-edge indicators they need for perfect guillotine cuts.</p>
+            <h3>Prepress Preflight Reports <span class="tag">Essential</span></h3>
+            <p>Catch costly errors before they ever reach the plate. Generate detailed preflight reports that analyze files for missing fonts, low-resolution imagery, RGB vs. CMYK color space issues, and improper trim/bleed box definitions.</p>
         </div>
 
         <!-- Tool 4 -->
         <div class="card">
-            <h3>VDP & CSV Mail Merge</h3>
-            <p>Process Variable Data Printing streams rapidly. Easily link CSV data sets to your PDF templates to generate personalized direct mailers, healthcare compliance letters, or promotional items. Automatically formats address blocks and variable text for production machinery.</p>
+            <h3>PDF Unlock & Decryption</h3>
+            <p>Bypass frustrating file restrictions. Instantly remove owner passwords and print-lock restrictions from client-supplied PDFs so you can preflight, impose, and send files to the RIP without workflow interruptions or chasing down the original designer.</p>
         </div>
 
         <!-- Tool 5 -->
         <div class="card">
-            <h3>Batch File Merger</h3>
-            <p>Consolidate chaos into a single print run. Seamlessly merge dozens or hundreds of individual PDF files into one continuous, optimized master document. Keeps formatting intact and drastically reduces RIP time on your digital presses.</p>
+            <h3>Advanced Batch Processing</h3>
+            <p>Process entire folders of PDFs simultaneously. Consolidate chaos into a single print run by seamlessly merging dozens of files into one optimized master document, or apply crop marks and scaling to hundreds of files in a single click.</p>
         </div>
 
         <!-- Tool 6 -->
         <div class="card">
-            <h3>Page Extraction & Splitting</h3>
-            <p>Break down massive batch files into manageable chunks for different presses. Extract specific page ranges, split a 10,000-page file into 1,000-page segments, or pull single records out of a corrupted print stream without having to go back to the original designer.</p>
+            <h3>Crop & Bleed Mark Generator</h3>
+            <p>Generating printer marks shouldn't be a guessing game. Apply professional perimeter crop marks, center marks, and define trim boxes globally across any document. Ensure your bindery department has exactly the edge-to-edge indicators they need.</p>
         </div>
 
         <!-- Tool 7 -->
+        <div class="card">
+            <h3>VDP & CSV Mail Merge</h3>
+            <p>Process Variable Data Printing streams rapidly. Easily link CSV data sets to your PDF templates to generate personalized direct mailers, healthcare compliance letters, or promotional items. Automatically formats address blocks for production machinery.</p>
+        </div>
+
+        <!-- Tool 8 -->
+        <div class="card">
+            <h3>Page Extraction & Splitting</h3>
+            <p>Break down massive batch files into manageable chunks for different presses. Extract specific page ranges, split a 10,000-page file into 1,000-page segments, or pull single records out of a corrupted print stream instantly.</p>
+        </div>
+
+        <!-- Tool 9 -->
         <div class="card">
             <h3>Automated Blank Page Insertion</h3>
             <p>Fix duplexing errors before they hit the press. Automatically insert blank pages to force right-hand reading, pad documents to divisible page counts for booklet making, or ensure chapter starts always land on the front of a sheet.</p>
         </div>
 
-        <!-- Tool 8 -->
+        <!-- Tool 10 -->
         <div class="card">
             <h3>Document Resizing & Scaling</h3>
             <p>Standardize customer files instantly. Force non-standard client PDFs into standard print dimensions (Letter, Tabloid, Custom) while intelligently maintaining aspect ratios, centering content, and automatically adjusting the trim box definitions.</p>
