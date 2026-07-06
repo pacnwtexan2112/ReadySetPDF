@@ -2,3 +2,11 @@ ReadySetPDFA professional prepress tool designed for print shops to automate imp
 
 
 Support & FeedbackIf you encounter a bug or have a feature request, please use the "Report Bug / Feedback" button located in the footer of the application to send a report directly to the development team.  Version HistorySee the CHANGELOG.md for a complete list of updates, including the latest v2.19 features.
+
+ReadySetPDF — Version 2.20
+
+DISCLAIMER: This software is currently in beta testing. It is provided "as is" without any warranties or guarantees of any kind. By using this software, you assume all risks of potential data loss, system instability, or any other damages. The developer is not liable for any losses or damages incurred through the use of this product.
+
+SYSTEM REQUIREMENTS: Requires Microsoft Windows. No installation is needed; simply unzip and run the executable.
+
+FEEDBACK & BUGS: If you encounter any issues or have suggestions, please use the "Report Bug / Feedback" link in the footer of the application or contact the developer directly.
