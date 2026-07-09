@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+[2.21] - 2026-07-09
+New Features & Pro Tools
+
+OCR Text Extraction (Pro Tier): Integrated the Tesseract AI engine to unlock text from flattened client scans and rasterized PDFs.
+
+Multiple Extraction Modes: Operators can now extract scanned text directly to a plain .txt file, a structured .csv (perfect for feeding lists directly into the VDP Mail Merge tool), or generate an archival-grade "Searchable PDF" that overlays an invisible, highlightable text layer perfectly over the original pixel artwork.
+
+Offline AI Processing: The Tesseract engine is fully baked into the executable. All document scanning and text recognition happens 100% locally on your machine, ensuring zero cloud API calls and maximum security for sensitive client data.
+
 [2.20] - 2026-07-06
 Major Features & Core Upgrades
 
