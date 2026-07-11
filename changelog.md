@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+[2.3] - 2026-07-11 July 11, 2026
+
+🚀 New Features & Enhancements
+
+Background Processing (Multithreading): The Automation and Hot Folder tools now run on a dedicated background thread. You can now execute massive batch processes and OCR scans without freezing or locking up the main user interface. A new "Real-Time Dashboard" in the header tracks all background tasks.
+
+Global Settings Menu: Added a dedicated ⚙️ Global Settings button to the main header, centralizing application preferences and color themes.
+
+Universal Measurement Units: You no longer need to select units on every individual tab. You can now set your preferred unit (Inches, Millimeters, or Points) in the Global Settings, and the entire application will instantly adapt.
+
+Custom Page Size Presets: Users can now create, name, and save unlimited custom sheet sizes (e.g., SRA3 320x450mm). These custom sizes automatically inject themselves into the standard preset dropdowns across the Resize, Monkey, Grid, and Booklet tabs.
+
+Persistent Preferences: Application settings, themes, and custom page sizes now save securely to your local Windows AppData folder. Your preferences will persist permanently, even if you close the app, move the .exe file, or update to a newer version of the software.
+
+🐛 Bug Fixes & Engine Upgrades
+
+Universal Math Engine (Metric Fix): Completely overhauled the PyMuPDF geometry logic. Stripped out all localized tab math and replaced it with a centralized to_points() engine. This permanently resolves the severe metric scaling bug where Millimeter conversions were resulting in astronomical page dimensions (e.g., 5050mm).
+
+VDP Visual Targeting Fix: Patched a critical scaling bug in the VDP Mail Merge tab where the green visual targeting box would shrink to an unusable 1/72nd of its size when processing non-inch inputs.
+
+Standard Preset Conversion: Standard US sizes (Letter, Legal, Tabloid) now actively listen to the Global Unit setting and will safely convert and populate their exact equivalents in millimeters or points when clicked.
+
 [2.21] - 2026-07-09
 New Features & Pro Tools
 
