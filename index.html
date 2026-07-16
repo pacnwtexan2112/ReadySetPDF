@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
+    <!-- Primary SEO -->
     <title>ReadySetPDF - Prepress Automation Software for Print Shops</title>
     <meta name="description" content="ReadySetPDF is powerful prepress automation software for small to mid-sized print shops. Features hot folders, variable data printing (VDP), automated booklet making, preflight reports, and batch processing. Runs locally on Windows with no cloud uploads.">
    
+    <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="7j_TEK6WKBoPwYGm_FcRZWtwU9vM__-nwWVwKI1yAdY" />
+   
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://readysetpdf.vercel.app/" />
    
+    <!-- Open Graph / Social Sharing -->
     <meta property="og:title" content="ReadySetPDF - Prepress Automation for Print Shops">
     <meta property="og:description" content="Hot folders, VDP, automated booklet making, and preflight tools built for print professionals. Runs locally on Windows.">
     <meta property="og:image" content="https://readysetpdf.vercel.app/ReadySetPDF%20screenshot.jpg">
     <meta property="og:url" content="https://readysetpdf.vercel.app/">
     <meta property="og:type" content="website">
    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ReadySetPDF - Prepress Automation Software for Print Shops">
     <meta name="twitter:description" content="Hot folders, variable data printing, automated booklet making & preflight tools. Built for print shops.">
     <meta name="twitter:image" content="https://readysetpdf.vercel.app/ReadySetPDF%20screenshot.jpg">
    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9R888JBBB0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -28,7 +35,28 @@
       gtag('js', new Date());
       gtag('config', 'G-9R888JBBB0');
     </script>
-
+   
+    <!-- JSON-LD Structured Data for Software -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ReadySetPDF",
+      "operatingSystem": "Windows",
+      "applicationCategory": "BusinessApplication",
+      "description": "Prepress automation software for print shops featuring hot folders, variable data printing, automated booklet making, preflight reports, and batch processing.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Darren Moeller"
+      }
+    }
+    </script>
+   
     <style>
         :root {
             --white: #F3EEE8;
@@ -37,11 +65,15 @@
             --lime: #B2F332;
             --mint: #BADDCF;
             --pale: #E8F3DA;
+            --alert: #FF4B4B;
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--white); color: var(--navy); margin: 0; padding: 0; line-height: 1.6; }
       
+        /* Hero Section */
         header { background-color: #FFFFFF; padding: 4rem 2rem; text-align: center; border-bottom: 5px solid var(--lime); }
         .hook-banner { background-color: var(--lime); color: var(--navy); padding: 12px 20px; font-weight: 800; border-radius: 8px; max-width: 800px; margin: 0 auto 2.5rem auto; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(178, 243, 50, 0.2); border: 2px solid #9AD62A; }
+      
+        /* Logo Sizing */
         .hero-logo { max-width: 280px; height: auto; margin: 0 auto 1.5rem auto; display: block; }
       
         header h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--navy); margin-top: 0; }
@@ -50,94 +82,306 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         h2 { color: var(--navy); border-bottom: 3px solid var(--lime); display: inline-block; padding-bottom: 5px; margin-top: 2rem;}
       
+        /* Benefits Section */
         .benefits-banner { background-color: var(--pale); padding: 2rem; border-radius: 8px; border-left: 5px solid var(--steel); margin: 2rem 0; }
+        .benefits-banner h3 { color: var(--navy); margin-top: 0; font-size: 1.5rem; }
         .benefits-banner ul { list-style-type: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .benefits-banner li { padding-left: 25px; position: relative; font-weight: 500; }
         .benefits-banner li::before { content: '✓'; color: var(--steel); position: absolute; left: 0; font-weight: bold; }
-        
+        @media (max-width: 768px) {
+            .benefits-banner ul { grid-template-columns: 1fr; }
+            .hero-logo { max-width: 220px; }
+        }
+        /* Tools Grid */
         .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 2rem; }
         .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(25, 18, 61, 0.08); transition: transform 0.2s ease; border-top: 4px solid var(--steel); }
         .card:hover { transform: translateY(-5px); border-top: 4px solid var(--lime); }
-        .tag { display: inline-block; background-color: var(--mint); color: var(--navy); font-size: 0.75rem; padding: 3px 8px; border-radius: 12px; font-weight: bold; margin-left: auto;}
+        .card h3 { color: var(--navy); margin-top: 0; font-size: 1.3rem; display: flex; align-items: center; gap: 10px; }
+        .tag { display: inline-block; background-color: var(--mint); color: var(--navy); font-size: 0.75rem; padding: 3px 8px; border-radius: 12px; font-weight: bold; vertical-align: middle; margin-left: auto;}
         .tag-new { background-color: var(--navy); color: var(--lime); }
-
+        .card p { font-size: 0.95rem; color: #444; }
+        /* Trust Banner */
         .trust-banner { background-color: var(--navy); color: white; padding: 3rem 2rem; border-radius: 8px; text-align: center; margin-top: 4rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .trust-banner h2 { color: var(--lime); border: none; margin-top: 0; font-size: 2rem; }
+        .trust-banner p { font-size: 1.1rem; max-width: 800px; margin: 0 auto; color: var(--white); }
+       
+        /* Call to Action */
         .cta-section { text-align: center; padding: 4rem 2rem; margin-top: 2rem; background-color: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 2px solid var(--pale); }
-        .btn { display: inline-block; background-color: var(--lime); color: var(--navy); padding: 1rem 2.5rem; text-decoration: none; font-size: 1.1rem; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: all 0.2s ease; }
-        .btn:hover { background-color: var(--navy); color: var(--lime); }
-        .btn-secondary { background-color: var(--navy); color: var(--lime); border: 2px solid var(--lime); }
-        .btn-secondary:hover { background-color: var(--lime); color: var(--navy); }
-        
+        .btn { display: inline-block; background-color: var(--lime); color: var(--navy); padding: 1rem 2.5rem; text-decoration: none; font-size: 1.1rem; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: all 0.2s ease; border: 2px solid transparent; }
+        .btn:hover { background-color: var(--navy); color: var(--lime); border: 2px solid var(--lime); }
+       
+        /* Secondary Button for Email */
+        .btn-secondary {
+            background-color: var(--navy);
+            color: var(--lime);
+            border: 2px solid var(--lime);
+        }
+        .btn-secondary:hover {
+            background-color: var(--lime);
+            color: var(--navy);
+            border: 2px solid var(--navy);
+        }
+        .cta-section .btn + .btn {
+            margin-left: 15px;
+        }
+       
+        /* Screenshot Section */
         .screenshot-container { text-align: center; margin: 4rem auto; padding: 0 2rem; max-width: 1000px; }
-        .app-screenshot { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
-
+        .app-screenshot { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 1px solid var(--steel); margin-top: 1.5rem; }
+     
         footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: var(--steel); }
 
-        /* Modal */
-        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(25,18,61,0.75); align-items: center; justify-content: center; }
-        .modal-content { background-color: #F3EEE8; max-width: 720px; width: 90%; max-height: 85vh; overflow-y: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-        .modal-header { padding: 15px 20px; background-color: #19123D; color: white; border-top-left-radius: 8px; border-top-right-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
-        .modal-tabs { display: flex; border-bottom: 1px solid #ddd; }
-        .tab-button { padding: 12px 24px; background: none; border: none; cursor: pointer; font-weight: 600; }
-        .tab-button.active { background-color: #F3EEE8; border-bottom: 3px solid #B2F332; color: #19123D; }
-        .tab-content { display: none; padding: 20px; background-color: #F9F6F0; }
-        .tab-content.active { display: block; }
-        .close { color: white; font-size: 28px; cursor: pointer; }
-        .close:hover { color: #B2F332; }
+        /* ========== MODAL STYLES ========== */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(25, 18, 61, 0.75);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background-color: #F3EEE8;
+            max-width: 720px;
+            width: 92%;
+            max-height: 85vh;
+            overflow-y: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .modal-header {
+            padding: 14px 20px;
+            background-color: #19123D;
+            color: white;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .modal-tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            background: #e8e0d6;
+        }
+        .tab-button {
+            padding: 12px 22px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        .tab-button.active {
+            background-color: #F3EEE8;
+            border-bottom: 3px solid #B2F332;
+            color: #19123D;
+        }
+        .tab-content {
+            display: none;
+            padding: 22px;
+            background-color: #F9F6F0;
+            font-size: 0.95rem;
+            line-height: 1.55;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .close {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .close:hover {
+            color: #B2F332;
+        }
+        .tab-content ol {
+            padding-left: 20px;
+        }
+        .tab-content li {
+            margin-bottom: 14px;
+        }
     </style>
+    <script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+   
 </head>
 <body>
 <header>
     <div class="hook-banner">🔥 Save hours per job vs. manual or old tools; hot folders run overnight.</div>
+  
     <img src="logo%20cropped.png" alt="ReadySetPDF Logo" class="hero-logo">
+  
     <h1>Prepress Automation for Print Shops</h1>
     <h1><a href="https://github.com/pacnwtexan2112/ReadySetPDF/blob/main/changelog.md" target="_blank" rel="noopener">2.3 released 7.11.26</a></h1>
     <h2>*THANK YOU FOR BEING A BETA TESTER - Expect regular bug fixes and tool additions; you ask, we build*</h2>
     <p>The preflight and prepress automation engine designed to eliminate bottlenecks, reduce waste, and get jobs on press faster for small to mid-sized print shops.</p>
 </header>
-
 <div class="container">
+  
     <div class="benefits-banner">
         <h3>Real-World ROI for Your Print Shop</h3>
-        <p style="margin-bottom: 20px;">Manual prepress is the silent margin-killer of the printing industry...</p>
+        <p style="margin-bottom: 20px;">Manual prepress is the silent margin-killer of the printing industry. ReadySetPDF replaces tedious manual layouts with automated precision, allowing your prepress operators to handle twice the volume with zero layout errors.</p>
         <ul>
             <li><strong>Eliminate the Prepress Bottleneck:</strong> Turn 45-minute booklet setups into 10-second automated clicks.</li>
-            <li><strong>No Browser Limitations:</strong> 100% local processing...</li>
-            <!-- Add the rest of your list items here if needed -->
+            <li><strong>No Browser Limitations:</strong> 100% local processing. No cloud upload delays or file size caps on massive jobs.</li>
+            <li><strong>Scale Your Capacity:</strong> Handle high-volume commercial runs confidently without adding headcount.</li>
+            <li><strong>Production-Grade Stability:</strong> Built to handle 10,000+ record VDP runs without crashing.</li>
         </ul>
     </div>
-
+   
     <h2>The Full Prepress Arsenal</h2>
-    <p>ReadySetPDF doesn't just view files; it engineers them for the press...</p>
+    <p>ReadySetPDF doesn't just view files; it engineers them for the press. Explore the complete suite of tools included in version 2.3.</p>
   
     <div class="feature-grid">
-        <!-- All your feature cards go here - they were in your original file -->
-        <!-- ... paste your cards if they are missing ... -->
+      
+        <div class="card">
+            <h3>Automated Hot Folders <span class="tag tag-new">Game Changer</span></h3>
+            <p>Set it and forget it. Designate watch folders on your local network. ReadySetPDF automatically monitors them, applying your pre-configured templates, impositions, and prepress checks so jobs are ready to print by morning.</p>
+        </div>
+        <div class="card">
+            <h3>Variable Data Handling <span class="tag">Core Tool</span></h3>
+            <p>Process massive Variable Data Printing streams rapidly using your own hardware. With no browser limitations or lag, you can seamlessly link CSV data sets to PDF templates for personalized direct mailers and healthcare compliance letters.</p>
+        </div>
+        <div class="card">
+            <h3>Step & Repeat Imposition</h3>
+            <p>Maximize your sheet yield instantly. Input custom row/column counts, define exact gutter spacing, and let the engine step-and-repeat single records into production-ready multi-up press sheets in seconds. Ideal for business cards and tags.</p>
+        </div>
+        <div class="card">
+            <h3>Automated Booklet Maker</h3>
+            <p>Stop wrestling with reader-to-printer spreads. ReadySetPDF automatically paginates multipage documents into perfect 2-up saddle stitch layouts, applying precise spine creep based on your specific paper caliper for flush face trims.</p>
+        </div>
+        <div class="card">
+            <h3>Prepress Preflight Reports</h3>
+            <p>Catch costly errors before they ever reach the plate. Generate detailed preflight reports that analyze files for missing fonts, low-resolution imagery, RGB vs. CMYK color space issues, and improper trim/bleed box definitions.</p>
+        </div>
+        <div class="card">
+            <h3>PDF Unlock & Decryption</h3>
+            <p>Bypass frustrating file restrictions. Instantly remove owner passwords and print-lock restrictions from client-supplied PDFs so you can preflight, impose, and send files to the RIP without workflow interruptions.</p>
+        </div>
+        <div class="card">
+            <h3>Advanced Batch Processing</h3>
+            <p>Process entire folders of PDFs simultaneously. Consolidate chaos into a single print run by seamlessly merging dozens of files into one optimized master document, or apply crop marks and scaling to hundreds of files in a single click.</p>
+        </div>
+        <div class="card">
+            <h3>Crop & Bleed Mark Generator</h3>
+            <p>Generating printer marks shouldn't be a guessing game. Apply professional perimeter crop marks, center marks, and define trim boxes globally across any document. Ensure your bindery department has exactly the edge-to-edge indicators they need.</p>
+        </div>
+        <div class="card">
+            <h3>Page Extraction & Splitting</h3>
+            <p>Break down massive batch files into manageable chunks for different presses. Extract specific page ranges, split a 10,000-page file into 1,000-page segments, or pull single records out of a corrupted print stream instantly.</p>
+        </div>
+        <div class="card">
+            <h3>Automated Blank Page Insertion</h3>
+            <p>Fix duplexing errors before they hit the press. Automatically insert blank pages to force right-hand reading, pad documents to divisible page counts for booklet making, or ensure chapter starts always land on the front of a sheet.</p>
+        </div>
+        <div class="card">
+            <h3>Document Resizing & Scaling</h3>
+            <p>Standardize customer files instantly. Force non-standard client PDFs into standard print dimensions (Letter, Tabloid, Custom) while intelligently maintaining aspect ratios, centering content, and automatically adjusting the trim box definitions.</p>
+        </div>
+         <div class="card">
+            <h3>Optical character Recognition (OCR)</h3>
+            <p>Unlock text from flattened client scans instantly. Leverage the built-in Tesseract AI engine to extract characters from rasterized images into plain text or structured CSV manifests, or generate searchable archival-grade PDFs by injecting an invisible text layer directly over the original artwork.</p>
+        </div>
     </div>
-
-    <div class="trust-banner"> ... </div>
-    <div class="cta-section"> ... </div>
-    <div class="screenshot-container"> ... </div>
+   
+    <div class="trust-banner">
+        <h2>Built for the Real World</h2>
+        <p>You don't have time for software that crashes when you need it most. ReadySetPDF delivers <strong>production-grade stability</strong> you can rely on. We provide <strong>weekly updates</strong> based directly on user feedback, and you are backed by <strong>dedicated support</strong> from print professionals who actually understand your workflow.</p>
+    </div>
+   
+    <!-- Updated Call to Action with Email Button -->
+    <div class="cta-section">
+        <h2>Ready to Automate Your Prepress Workflow?</h2>
+        <p>ReadySetPDF is built by a print professional, for print professionals. Download it free and start saving hours per job today.</p>
+       
+        <!-- Primary Download Button -->
+        <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/2.3/readysetpdf.2.3.exe.zip" class="btn">Download Version 2.3 Now</a>
+       
+        <!-- Secondary Email Button -->
+        <a href="mailto:damoeller@gmail.com?subject=ReadySetPDF%20Question" class="btn btn-secondary">Email ReadySetPDF Directly</a>
+       
+        <p style="margin-top: 20px; font-size: 0.9rem; color: var(--steel);">
+            Requires Windows OS. No installation needed — just unzip and run.
+        </p>
+    </div>
+   
+    <div class="screenshot-container">
+        <h2>See It In Action</h2>
+        <img src="ReadySetPDF%20screenshot.jpg" alt="ReadySetPDF prepress automation interface showing hot folder and VDP tools" class="app-screenshot">
+    </div>
 </div>
 
 <footer>
     &copy; 2026 ReadySetPDF by Darren Moeller. *BY PRINTERS FOR PRINTERS* &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#" onclick="showAboutModal(); return false;" style="color: var(--steel);">About & EULA</a>
+    <a href="#" onclick="showAboutModal(); return false;" style="color: var(--steel); text-decoration: underline;">About & EULA</a>
 </footer>
 
-<!-- Modal -->
+<!-- ========== ABOUT / EULA MODAL ========== -->
 <div id="aboutModal" class="modal">
     <div class="modal-content">
         <div class="modal-header">
             <h3>About ReadySetPDF</h3>
-            <span class="close" onclick="closeModal()">×</span>
+            <span class="close" onclick="closeModal()">&times;</span>
         </div>
+        
         <div class="modal-tabs">
             <button class="tab-button active" onclick="openTab(event, 'eula')">About & EULA</button>
             <button class="tab-button" onclick="openTab(event, 'licenses')">Open Source Licenses</button>
         </div>
-        <div id="eula" class="tab-content active"> ... your disclaimer text ... </div>
-        <div id="licenses" class="tab-content"> ... your licenses text ... </div>
+
+        <!-- About & EULA Tab -->
+        <div id="eula" class="tab-content active">
+            <h4 style="margin-top:0;">ReadySetPDF - Professional Prepress</h4>
+            <p><strong>Beta Release</strong></p>
+            
+            <h5 style="margin-bottom:8px;">DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY</h5>
+            <p>The software is provided "AS IS" and "AS AVAILABLE", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+            <p>In no event shall the author or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.</p>
+            <p>By using this software, you acknowledge that it is in a Beta testing phase and you assume all risks associated with its use, including but not limited to data loss, document corruption, or business interruption. Always maintain backups of your original documents.</p>
+        </div>
+
+        <!-- Open Source Licenses Tab -->
+        <div id="licenses" class="tab-content">
+            <p>ReadySetPDF utilizes the following open-source libraries. We are grateful to the developers who make these tools available.</p>
+            <ol>
+                <li>
+                    <strong>PyMuPDF (fitz)</strong><br>
+                    License: GNU AGPL v3.0<br>
+                    To comply with the AGPL v3.0 requirements, the complete source code for ReadySetPDF is made freely and publicly available on GitHub at: 
+                    <a href="https://github.com/pacnwtexan2112/ReadySetPDF" target="_blank" rel="noopener">https://github.com/pacnwtexan2112/ReadySetPDF</a>
+                </li>
+                <li>
+                    <strong>Tesseract OCR Engine</strong><br>
+                    License: Apache License 2.0
+                </li>
+                <li>
+                    <strong>Pillow (PIL - Python Imaging Library)</strong><br>
+                    License: HPND License
+                </li>
+                <li>
+                    <strong>TkinterDnD2</strong><br>
+                    License: MIT License
+                </li>
+                <li>
+                    <strong>QrCode</strong><br>
+                    License: BSD 3-Clause License
+                </li>
+            </ol>
+        </div>
     </div>
 </div>
 
@@ -145,14 +389,31 @@
     function showAboutModal() {
         document.getElementById('aboutModal').style.display = 'flex';
     }
+
     function closeModal() {
         document.getElementById('aboutModal').style.display = 'none';
     }
+
     function openTab(evt, tabName) {
-        document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+        // Hide all tab contents
+        document.querySelectorAll('.tab-content').forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+        // Remove active class from all buttons
+        document.querySelectorAll('.tab-button').forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        // Show the selected tab and mark button as active
         document.getElementById(tabName).classList.add('active');
         evt.currentTarget.classList.add('active');
+    }
+
+    // Close modal if user clicks outside the content
+    window.onclick = function(event) {
+        var modal = document.getElementById('aboutModal');
+        if (event.target === modal) {
+            closeModal();
+        }
     }
 </script>
 </body>
