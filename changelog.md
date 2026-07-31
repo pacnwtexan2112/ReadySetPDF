@@ -2,6 +2,48 @@
 
 All notable changes to this project will be documented in this file.
 
+[v3.0] - 7.30.2026
+
+File Size Optimization Engine: Radically overhauled the PDF export engine to prevent file bloat caused by nested XObjects.
+
+Aggressive Garbage Collection: Added garbage=4 and clean=True parameters to automatically purge duplicate resource dictionaries and unreferenced objects during export.
+
+New Export UI Controls: Added a dedicated "File Size & Compression" section to the Export Dialog with two new toggles:
+
+High-Yield Deflation Mode: Compresses uncompressed font and stream dictionaries.
+
+Deep Image Stream Compression: Re-encodes raster images into optimized JPEG/Deflate passes.
+
+Dual-Navigation Real-Time Monitor: Upgraded the preview window controls to allow paging through individual files (⏪ File / File ⏩), in addition to paging through the pages within a selected file.
+
+Preview Merged Toggle: Added a "Preview Merged" checkbox to easily switch between viewing individual files or visualizing the entire stacked, merged document.
+
+Global Suffix Exporting: Upgraded the Export Dialog's "individual PDFs" option to include a text entry box. The application now seamlessly processes and saves multiple files while preserving their original names and appending a custom suffix (defaulting to _readysetpdf).
+
+Ruler Toggle: Introduced a "📏 Show Rulers" checkbox directly in the Real-Time Monitor control row, allowing the dynamic CAD measurements to be toggled on or off instantly for an unobstructed view of the proof.
+
+Auto-Rotate Fix: Removed a rogue bounding-box reset command (page.set_rotation(0)) from the Resize pipeline. Landscape documents (such as maps) will no longer incorrectly snap to portrait orientations during resizing or imposition.
+
+Grid Autoscaling: Exposed the previously hidden Autoscale and Maintain Aspect Ratio variables directly on the Grid tab UI. The grid engine now automatically shrinks or expands graphics to perfectly fit within the mathematical bounds of the generated columns and rows.
+
+Bounding-Box Rotation: Rebuilt the Rotation matrix. Rather than blindly rotating the entire sheet canvas, the engine now rotates the actual graphic layer and proportionally scales it to fit safely inside the document's original bounding box.
+
+Smart Tooltips: Integrated a custom tooltip class to provide floating hover instructions across the application, specifically targeting complex nomenclature fields like the Page Selector under the Rotate and Cutter tabs.
+
+About & EULA Menu: Added a dedicated "ℹ️ About" button to the main header.
+
+Liability Protection: Integrated a standard "AS-IS" Beta disclaimer to protect against liability for data loss or document corruption.
+
+Open Source Attributions: Added a tab fulfilling the GNU AGPL v3.0 license requirements for PyMuPDF (fitz), alongside attributions for Tesseract, Pillow, and other integrated libraries.
+
+CAD-Style Rulers: Built a dedicated drawing engine that overlays dynamic width and height measurement lines directly onto the live preview canvas.
+
+Dynamic Unit Conversion: Rigged the ruler strings to strictly follow the global math engine, ensuring they accurately format and display the chosen unit suffix (in, mm, or pt).
+
+Instant Redraws: Tied the Global Settings unit radio buttons directly to the canvas, so switching between measurement types instantly re-renders the preview window and updates the ruler numbers.
+
+Canvas Padding: Increased the inner padding of the preview container from 40 to 100 pixels to comfortably accommodate the new dimension lines.
+
 [2.3] - 2026-07-11 July 11, 2026
 
 New Features & Enhancements
