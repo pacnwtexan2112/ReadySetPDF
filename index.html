@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <!-- Primary SEO -->
-    <title>ReadySetPDF - Prepress Automation Software for Print Shops</title>
-    <meta name="description" content="ReadySetPDF is powerful prepress automation software for small to mid-sized print shops. Features hot folders, variable data printing (VDP), automated booklet making, preflight reports, and batch processing. Runs locally on Windows with no cloud uploads.">
+    <title>ReadySetPDF & Software Suite - UR Print & Graphics</title>
+    <meta name="description" content="Prepress automation software and professional tools for print shops by UR Print & Graphics. Features hot folders, VDP, automated booklet making, and preflight tools. Runs locally on Windows.">
    
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="7j_TEK6WKBoPwYGm_FcRZWtwU9vM__-nwWVwKI1yAdY" />
@@ -54,6 +53,10 @@
       "author": {
         "@type": "Person",
         "name": "Darren Moeller"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "UR Print & Graphics"
       }
     }
     </script>
@@ -70,6 +73,13 @@
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--white); color: var(--navy); margin: 0; padding: 0; line-height: 1.6; }
       
+        /* Navigation */
+        nav { background: var(--navy); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; color: white; border-bottom: 3px solid var(--lime); }
+        nav .brand { font-weight: bold; font-size: 1.1rem; color: var(--lime); text-decoration: none; }
+        nav .nav-links { display: flex; gap: 20px; }
+        nav .nav-links a { color: white; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+        nav .nav-links a:hover { color: var(--lime); }
+
         /* Hero Section */
         header { background-color: #FFFFFF; padding: 4rem 2rem; text-align: center; border-bottom: 5px solid var(--lime); }
         .hook-banner { background-color: var(--lime); color: var(--navy); padding: 12px 20px; font-weight: 800; border-radius: 8px; max-width: 800px; margin: 0 auto 2.5rem auto; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(178, 243, 50, 0.2); border: 2px solid #9AD62A; }
@@ -222,173 +232,212 @@
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
+
+<!-- Top Navigation Bar -->
+<nav>
+    <a href="#" class="brand">UR Print & Graphics</a>
+    <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="https://github.com/pacnwtexan2112/ReadySetPDF" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:urprintgraphics@gmail.com">Support</a>
+    </div>
+</nav>
+
 <header>
-    <div class="hook-banner">🔥 Save hours per job vs. manual or old tools; hot folders run overnight.</div>
+    <div class="hook-banner">🔥 Save hours per job vs. manual or old tools; hot folders run overnight.[cite: 4]</div>
   
     <img src="logo%20cropped.png" alt="ReadySetPDF Logo" class="hero-logo">
   
-    <h1>Prepress Automation for Print Shops</h1>
-    <h1><a href="https://github.com/pacnwtexan2112/ReadySetPDF/blob/main/changelog.md" target="_blank" rel="noopener">3.0 released 7.30.26</a></h1>
-    <h2>*THANK YOU FOR BEING A BETA TESTER - Expect regular bug fixes and tool additions; you ask, we build*</h2>
-    <p>The preflight and prepress automation engine designed to eliminate bottlenecks, reduce waste, and get jobs on press faster for small to mid-sized print shops.</p>
+    <span style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; color: var(--steel); font-weight: bold; display: block; margin-bottom: 5px;">A UR Print & Graphics Product</span>
+    <h1>ReadySetPDF</h1>
+    <h1><a href="https://github.com/pacnwtexan2112/ReadySetPDF/blob/main/changelog.md" target="_blank" rel="noopener">3.0 released 7.30.26</a>[cite: 4]</h1>
+    <h2>*THANK YOU FOR BEING A BETA TESTER - Expect regular bug fixes and tool additions; you ask, we build*[cite: 4]</h2>
+    <p>The preflight and prepress automation engine designed to eliminate bottlenecks, reduce waste, and get jobs on press faster for small to mid-sized print shops[cite: 4].</p>
 </header>
-<div class="container">
+
+<div class="container" id="products">
   
-    <div class="benefits-banner">
+    <!-- Software Suite / Products Portfolio Grid -->
+    <h2>Our Software Suite</h2>
+    <p>Professional desktop utilities built specifically for print shop workflows by UR Print & Graphics.</p>
+    
+    <div class="feature-grid">
+        <!-- ReadySetPDF Product Card -->
+        <div class="card" style="border-top: 4px solid var(--lime);">
+            <h3>ReadySetPDF <span class="tag tag-new">Flagship</span></h3>
+            <p>Hot folders, VDP mail merge, automated booklet layout, and preflight tools. Runs 100% locally on Windows[cite: 4].</p>
+            <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/3.0/ReadySetPDF_v3.01_Setup.exe" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Download v3.0</a>
+                <!-- Future Lemon Squeezy integration placeholder button -->
+                <a href="https://yourstore.lemonsqueezy.com/buy/your-product-id" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" target="_blank" rel="noopener">Buy Pro License</a>
+            </div>
+        </div>
+
+        <!-- ReadySetOCR Product Placeholder Card -->
+        <div class="card" style="opacity: 0.85; border-top: 4px solid var(--steel);">
+            <h3>ReadySetOCR <span class="tag">Coming Soon</span></h3>
+            <p>Advanced optical character recognition utility designed for scanning, parsing text manifests, and batch document data indexing.</p>
+            <div style="margin-top: 20px;">
+                <span style="font-size: 0.85rem; font-weight: bold; color: var(--steel);">In Development for 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits-banner" style="margin-top: 3rem;">
         <h3>Real-World ROI for Your Print Shop</h3>
-        <p style="margin-bottom: 20px;">Manual prepress is the silent margin-killer of the printing industry. ReadySetPDF replaces tedious manual layouts with automated precision, allowing your prepress operators to handle twice the volume with zero layout errors.</p>
+        <p style="margin-bottom: 20px;">Manual prepress is the silent margin-killer of the printing industry[cite: 4]. ReadySetPDF replaces tedious manual layouts with automated precision, allowing your prepress operators to handle twice the volume with zero layout errors[cite: 4].</p>
         <ul>
-            <li><strong>Eliminate the Prepress Bottleneck:</strong> Turn 45-minute booklet setups into 10-second automated clicks.</li>
-            <li><strong>No Browser Limitations:</strong> 100% local processing. No cloud upload delays or file size caps on massive jobs.</li>
-            <li><strong>Scale Your Capacity:</strong> Handle high-volume commercial runs confidently without adding headcount.</li>
-            <li><strong>Production-Grade Stability:</strong> Built to handle 10,000+ record VDP runs without crashing.</li>
+            <li><strong>Eliminate the Prepress Bottleneck:</strong> Turn 45-minute booklet setups into 10-second automated clicks[cite: 4].</li>
+            <li><strong>No Browser Limitations:</strong> 100% local processing[cite: 4]. No cloud upload delays or file size caps on massive jobs[cite: 4].</li>
+            <li><strong>Scale Your Capacity:</strong> Handle high-volume commercial runs confidently without adding headcount[cite: 4].</li>
+            <li><strong>Production-Grade Stability:</strong> Built to handle 10,000+ record VDP runs without crashing[cite: 4].</li>
         </ul>
     </div>
    
     <h2>The Full Prepress Arsenal</h2>
-    <p>ReadySetPDF doesn't just view files; it engineers them for the press. Explore the complete suite of tools included in version 2.3.</p>
+    <p>ReadySetPDF doesn't just view files; it engineers them for the press. Explore the complete suite of tools included[cite: 4].</p>
   
     <div class="feature-grid">
         <div class="card">
-            <h3>Automated Hot Folders <span class="tag tag-new">Game Changer</span></h3>
-            <p>Set it and forget it. Designate watch folders on your local network. ReadySetPDF automatically monitors them, applying your pre-configured templates, impositions, and prepress checks so jobs are ready to print by morning.</p>
+            <h3>Automated Hot Folders <span class="tag tag-new">Game Changer</span>[cite: 4]</h3>
+            <p>Set it and forget it[cite: 4]. Designate watch folders on your local network[cite: 4]. ReadySetPDF automatically monitors them, applying your pre-configured templates, impositions, and prepress checks so jobs are ready to print by morning[cite: 4].</p>
         </div>
         <div class="card">
-            <h3>Variable Data Handling <span class="tag">Core Tool</span></h3>
-            <p>Process massive Variable Data Printing streams rapidly using your own hardware. With no browser limitations or lag, you can seamlessly link CSV data sets to PDF templates for personalized direct mailers and healthcare compliance letters.</p>
+            <h3>Variable Data Handling <span class="tag">Core Tool</span>[cite: 4]</h3>
+            <p>Process massive Variable Data Printing streams rapidly using your own hardware[cite: 4]. With no browser limitations or lag, you can seamlessly link CSV data sets to PDF templates for personalized direct mailers and healthcare compliance letters[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Step & Repeat Imposition</h3>
-            <p>Maximize your sheet yield instantly. Input custom row/column counts, define exact gutter spacing, and let the engine step-and-repeat single records into production-ready multi-up press sheets in seconds. Ideal for business cards and tags.</p>
+            <p>Maximize your sheet yield instantly[cite: 4]. Input custom row/column counts, define exact gutter spacing, and let the engine step-and-repeat single records into production-ready multi-up press sheets in seconds[cite: 4]. Ideal for business cards and tags[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Automated Booklet Maker</h3>
-            <p>Stop wrestling with reader-to-printer spreads. ReadySetPDF automatically paginates multipage documents into perfect 2-up saddle stitch layouts, applying precise spine creep based on your specific paper caliper for flush face trims.</p>
+            <p>Stop wrestling with reader-to-printer spreads[cite: 4]. ReadySetPDF automatically paginates multipage documents into perfect 2-up saddle stitch layouts, applying precise spine creep based on your specific paper caliper for flush face trims[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Prepress Preflight Reports</h3>
-            <p>Catch costly errors before they ever reach the plate. Generate detailed preflight reports that analyze files for missing fonts, low-resolution imagery, RGB vs. CMYK color space issues, and improper trim/bleed box definitions.</p>
+            <p>Catch costly errors before they ever reach the plate[cite: 4]. Generate detailed preflight reports that analyze files for missing fonts, low-resolution imagery, RGB vs. CMYK color space issues, and improper trim/bleed box definitions[cite: 4].</p>
         </div>
         <div class="card">
             <h3>PDF Unlock & Decryption</h3>
-            <p>Bypass frustrating file restrictions. Instantly remove owner passwords and print-lock restrictions from client-supplied PDFs so you can preflight, impose, and send files to the RIP without workflow interruptions.</p>
+            <p>Bypass frustrating file restrictions[cite: 4]. Instantly remove owner passwords and print-lock restrictions from client-supplied PDFs so you can preflight, impose, and send files to the RIP without workflow interruptions[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Advanced Batch Processing</h3>
-            <p>Process entire folders of PDFs simultaneously. Consolidate chaos into a single print run by seamlessly merging dozens of files into one optimized master document, or apply crop marks and scaling to hundreds of files in a single click.</p>
+            <p>Process entire folders of PDFs simultaneously[cite: 4]. Consolidate chaos into a single print run by seamlessly merging dozens of files into one optimized master document, or apply crop marks and scaling to hundreds of files in a single click[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Crop & Bleed Mark Generator</h3>
-            <p>Generating printer marks shouldn't be a guessing game. Apply professional perimeter crop marks, center marks, and define trim boxes globally across any document. Ensure your bindery department has exactly the edge-to-edge indicators they need.</p>
+            <p>Generating printer marks shouldn't be a guessing game[cite: 4]. Apply professional perimeter crop marks, center marks, and define trim boxes globally across any document[cite: 4]. Ensure your bindery department has exactly the edge-to-edge indicators they need[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Page Extraction & Splitting</h3>
-            <p>Break down massive batch files into manageable chunks for different presses. Extract specific page ranges, split a 10,000-page file into 1,000-page segments, or pull single records out of a corrupted print stream instantly.</p>
+            <p>Break down massive batch files into manageable chunks for different presses[cite: 4]. Extract specific page ranges, split a 10,000-page file into 1,000-page segments, or pull single records out of a corrupted print stream instantly[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Automated Blank Page Insertion</h3>
-            <p>Fix duplexing errors before they hit the press. Automatically insert blank pages to force right-hand reading, pad documents to divisible page counts for booklet making, or ensure chapter starts always land on the front of a sheet.</p>
+            <p>Fix duplexing errors before they hit the press[cite: 4]. Automatically insert blank pages to force right-hand reading, pad documents to divisible page counts for booklet making, or ensure chapter starts always land on the front of a sheet[cite: 4].</p>
         </div>
         <div class="card">
             <h3>Document Resizing & Scaling</h3>
-            <p>Standardize customer files instantly. Force non-standard client PDFs into standard print dimensions (Letter, Tabloid, Custom) while intelligently maintaining aspect ratios, centering content, and automatically adjusting the trim box definitions.</p>
+            <p>Standardize customer files instantly[cite: 4]. Force non-standard client PDFs into standard print dimensions (Letter, Tabloid, Custom) while intelligently maintaining aspect ratios, centering content, and automatically adjusting the trim box definitions[cite: 4].</p>
         </div>
         <div class="card">
-            <h3>Optical character Recognition (OCR)</h3>
-            <p>Unlock text from flattened client scans instantly. Leverage the built-in Tesseract AI engine to extract characters from rasterized images into plain text or structured CSV manifests, or generate searchable archival-grade PDFs by injecting an invisible text layer directly over the original artwork.</p>
+            <h3>Optical Character Recognition (OCR)</h3>
+            <p>Unlock text from flattened client scans instantly[cite: 4]. Leverage the built-in Tesseract AI engine to extract characters from rasterized images into plain text or structured CSV manifests, or generate searchable archival-grade PDFs by injecting an invisible text layer directly over the original artwork[cite: 4].</p>
         </div>
     </div>
    
     <div class="trust-banner">
-        <h2>Built for the Real World</h2>
-        <p>ReadySetPDF delivers <strong>production-grade stability</strong> you can rely on. We provide <strong>regular updates</strong> based directly on user feedback, and you are backed by <strong>dedicated support</strong> from print professionals who actually understand your workflow.</p>
+        <h2>Built for the Real World[cite: 4]</h2>
+        <p>ReadySetPDF delivers <strong>production-grade stability</strong> you can rely on[cite: 4]. We provide <strong>regular updates</strong> based directly on user feedback, and you are backed by <strong>dedicated support</strong> from print professionals who actually understand your workflow[cite: 4].</p>
     </div>
    
     <!-- Call to Action Section -->
     <div class="cta-section">
-        <h2>Ready to Automate Your Prepress Workflow?</h2>
-        <p>ReadySetPDF is built by a print professional, for print professionals. Download it free and start saving hours per job today.</p>
+        <h2>Ready to Automate Your Prepress Workflow?[cite: 4]</h2>
+        <p>ReadySetPDF is built by a print professional, for print professionals[cite: 4]. Download it free and start saving hours per job today[cite: 4].</p>
        
         <div class="cta-buttons">
             <!-- Primary Download Button -->
-            <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/3.0/ReadySetPDF_v3.01_Setup.exe" class="btn">Download Version 3.0 Installer</a>
+            <a href="https://github.com/pacnwtexan2112/ReadySetPDF/releases/download/3.0/ReadySetPDF_v3.01_Setup.exe" class="btn">Download Version 3.0 Installer[cite: 4]</a>
            
             <!-- Email Button -->
-            <a href="mailto:urprintgraphics@gmail.com?subject=ReadySetPDF%20Question" class="btn btn-secondary">Email Directly</a>
+            <a href="mailto:urprintgraphics@gmail.com?subject=ReadySetPDF%20Question" class="btn btn-secondary">Email Directly[cite: 4]</a>
 
             <!-- Facebook Community Button -->
             <a href="https://www.facebook.com/share/1DZn9d3fYf/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                 <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                Facebook Community
+                Facebook Community[cite: 4]
             </a>
         </div>
        
         <p style="margin-top: 20px; font-size: 0.9rem; color: var(--steel);">
-            Requires Windows OS. No installation needed — just unzip and run.
+            Requires Windows OS[cite: 4]. No installation needed — just unzip and run[cite: 4].
         </p>
     </div>
    
     <div class="screenshot-container">
-        <h2>See It In Action</h2>
+        <h2>See It In Action[cite: 4]</h2>
         <img src="ReadySetPDF%20screenshot.jpg" alt="ReadySetPDF prepress automation interface showing hot folder and VDP tools" class="app-screenshot">
     </div>
 </div>
 
 <footer>
-    &copy; 2026 ReadySetPDF by Darren Moeller/URPrintGraphics. *BY PRINTERS FOR PRINTERS* &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="https://www.facebook.com/share/1DZn9d3fYf/" target="_blank" rel="noopener noreferrer">Facebook Group</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#" onclick="showAboutModal(); return false;">About & EULA</a>
+    &copy; 2026 ReadySetPDF by Darren Moeller / URPrintGraphics. *BY PRINTERS FOR PRINTERS* &nbsp;&nbsp;|&nbsp;&nbsp;[cite: 4]
+    <a href="https://www.facebook.com/share/1DZn9d3fYf/" target="_blank" rel="noopener noreferrer">Facebook Group</a> &nbsp;&nbsp;|&nbsp;&nbsp;[cite: 4]
+    <a href="#" onclick="showAboutModal(); return false;">About & EULA</a>[cite: 4]
 </footer>
 
 <!-- ========== ABOUT / EULA MODAL ========== -->
 <div id="aboutModal" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3>About ReadySetPDF</h3>
+            <h3>About ReadySetPDF[cite: 4]</h3>
             <span class="close" onclick="closeModal()">&times;</span>
         </div>
         
         <div class="modal-tabs">
-            <button class="tab-button active" onclick="openTab(event, 'eula')">About & EULA</button>
-            <button class="tab-button" onclick="openTab(event, 'licenses')">Open Source Licenses</button>
+            <button class="tab-button active" onclick="openTab(event, 'eula')">About & EULA[cite: 4]</button>
+            <button class="tab-button" onclick="openTab(event, 'licenses')">Open Source Licenses[cite: 4]</button>
         </div>
 
         <!-- About & EULA Tab -->
         <div id="eula" class="tab-content active">
-            <h4 style="margin-top:0;">ReadySetPDF - Professional Prepress</h4>
-            <p><strong>Beta Release</strong></p>
+            <h4 style="margin-top:0;">ReadySetPDF - Professional Prepress[cite: 4]</h4>
+            <p><strong>Beta Release</strong>[cite: 4]</p>
             
-            <h5 style="margin-bottom:8px;">DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY</h5>
-            <p>The software is provided "AS IS" and "AS AVAILABLE", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
-            <p>In no event shall the author or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.</p>
-            <p>By using this software, you acknowledge that it is in a Beta testing phase and you assume all risks associated with its use, including but not limited to data loss, document corruption, or business interruption. Always maintain backups of your original documents.</p>
+            <h5 style="margin-bottom:8px;">DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY</h5>[cite: 4]
+            <p>The software is provided "AS IS" and "AS AVAILABLE", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement[cite: 4].</p>
+            <p>In no event shall the author or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software[cite: 4].</p>
+            <p>By using this software, you acknowledge that it is in a Beta testing phase and you assume all risks associated with its use, including but not limited to data loss, document corruption, or business interruption[cite: 4]. Always maintain backups of your original documents[cite: 4].</p>
         </div>
 
         <!-- Open Source Licenses Tab -->
         <div id="licenses" class="tab-content">
-            <p>ReadySetPDF utilizes the following open-source libraries. We are grateful to the developers who make these tools available.</p>
+            <p>ReadySetPDF utilizes the following open-source libraries[cite: 4]. We are grateful to the developers who make these tools available[cite: 4].</p>
             <ol>
                 <li>
-                    <strong>PyMuPDF (fitz)</strong><br>
-                    License: GNU AGPL v3.0<br>
-                    To comply with the AGPL v3.0 requirements, the complete source code for ReadySetPDF is made freely and publicly available on GitHub at: 
-                    <a href="https://github.com/pacnwtexan2112/ReadySetPDF" target="_blank" rel="noopener">https://github.com/pacnwtexan2112/ReadySetPDF</a>
+                    <strong>PyMuPDF (fitz)</strong>[cite: 4]<br>
+                    License: GNU AGPL v3.0[cite: 4]<br>
+                    To comply with the AGPL v3.0 requirements, the complete source code for ReadySetPDF is made freely and publicly available on GitHub at:[cite: 4]
+                    <a href="https://github.com/pacnwtexan2112/ReadySetPDF" target="_blank" rel="noopener">https://github.com/pacnwtexan2112/ReadySetPDF</a>[cite: 4]
                 </li>
                 <li>
-                    <strong>Tesseract OCR Engine</strong><br>
-                    License: Apache License 2.0
+                    <strong>Tesseract OCR Engine</strong>[cite: 4]<br>
+                    License: Apache License 2.0[cite: 4]
                 </li>
                 <li>
-                    <strong>Pillow (PIL - Python Imaging Library)</strong><br>
-                    License: HPND License
+                    <strong>Pillow (PIL - Python Imaging Library)</strong>[cite: 4]<br>
+                    License: HPND License[cite: 4]
                 </li>
                 <li>
-                    <strong>TkinterDnD2</strong><br>
-                    License: MIT License
+                    <strong>TkinterDnD2</strong>[cite: 4]<br>
+                    License: MIT License[cite: 4]
                 </li>
                 <li>
-                    <strong>QrCode</strong><br>
-                    License: BSD 3-Clause License
+                    <strong>QrCode</strong>[cite: 4]<br>
+                    License: BSD 3-Clause License[cite: 4]
                 </li>
             </ol>
         </div>
